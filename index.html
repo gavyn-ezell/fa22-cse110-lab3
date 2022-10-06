@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="ssbu.ico">
+  </head>
+  <body>
+    <div>
+        <h1>SSBU Tournament Notification System -  Brainstorm Meeting</h1>
+        <hr>
+        <h3>Date: July 10, 2015</h3>
+
+        <span><b>Attendance List</b></span>
+        <ul> 
+            <li>Gavyn E.</li>
+            <li>Ashish D.</li>
+            <li>Will K.</li>
+            <li>Gino P.</li>
+            <li>John C.</li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <h1>Agenda</h1>
+            <p>
+                <a href="#idea">Basic Idea</a>  |
+                <a href="#features">Details</a>  | 
+                <a href="#diagram">Diagram</a>  |
+                <a href="#steps">Next Steps</a>
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section id="idea">
+            <h2>Basic Idea</h2>
+            <p>
+                Create a <strong>notification system</strong> for avid Smash Ultimate tournament fans.
+            </p>
+        </section>
+        <section id="features">
+            <h2>Details</h2>
+            <details>
+                <summary>Tournament and Player Preferences</summary>
+                User's have option to specifically choose what tournaments
+                will be monitored and what players they will hear updates about.
+            </details>
+            <details>
+                <summary>Set Counts and Stream Notifications</summary>
+                User's will be notified by phone, in real time, as the set count changes for 
+                certain matches within the tournament. 
+            </details>
+
+        </section>
+        <section id="diagram">
+            <h2>Diagram</h2>
+            <img src="Diagram.png" alt="diagram">
+            
+            <br>
+
+            <small><i>Drawn by Gavyn E.</i></small>
+        </section>
+        <section id="steps">
+            <h2>Next Steps</h2>
+            <ol>
+                <li>Plan out tech stack</li>
+                <li>Plan out system</li>
+                <li>Familiarize with Start.gg API</li>
+            </ol>
+
+        </section>
+        <em>Links of Interest</em><br>
+        <a href="https://www.start.gg/">Start.gg</a> | 
+        <a href="https://developer.start.gg/docs/intro/">API</a>
+        
+    </main>
+    <footer>
+        <form>
+            <fieldset>
+                <legend>Send Suggestion</legend>
+                <label for="fname">Name: </label>
+                <input type="text" id="fname"><br><br>
+                <label for="suggestion">Suggestion: </label><br>
+                <textarea id="suggestion">
+
+                </textarea><br>
+                <label for="rating">Idea Rating: </label>
+                <select name="rating" id="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select><br>
+                <input list="dlist" name="dlist">
+                <datalist id="dlist">
+                    <option value="Copy of Suggestion">
+                    <option value="No Copy"></option>
+                </datalist>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+    <br>
+    <video controls>
+        <source src="zelda.mp4" type="video/mp4">
+    Your browser does not support the video
+    </video>
+    <audio controls>
+        <source src="mc.mp3" type="video/mp3">
+    </audio>
+</html>
