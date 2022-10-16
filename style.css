@@ -1,0 +1,23 @@
+/* adding border to image in site */
+html {
+    font-size: 18px;
+}
+h1 {
+    font-size: 5vmin;
+}
+h3 {
+    font-size: 5vh;
+}
+#diagram {
+    border-style: solid;
+    border-color: #5FB2F2;
+    border-width: 0.08cm;
+    border-radius: 5px
+}
+.minutes-section {
+    margin: 0.25in;
+}
+
+.lists li {
+    font-size: 0.9em;
+}

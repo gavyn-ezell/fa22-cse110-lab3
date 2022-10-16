@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+        body {
+            background-color: (256,256,255);
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Meeting Minutes</title>
     <link rel="icon" href="ssbu.ico">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body >
     <div>
-        <h1>SSBU Tournament Notification System -  Brainstorm Meeting</h1>
+        <div id="head-title">
+            <h1 style="color: black; font-size: 6vmin;">SSBU Tournament Notification System -  Brainstorm Meeting</h1>
+        </div>
         <hr>
         <h3>Date: July 10, 2015</h3>
 
         <span><b>Attendance List</b></span>
-        <ul> 
+        <ul class="lists"> 
             <li>Gavyn E.</li>
             <li>Ashish D.</li>
             <li>Will K.</li>
@@ -32,13 +40,13 @@
         </nav>
     </header>
     <main>
-        <section id="idea">
+        <section class="minutes-section">
             <h2>Basic Idea</h2>
             <p>
                 Create a <strong>notification system</strong> for avid Smash Ultimate tournament fans.
             </p>
         </section>
-        <section id="features">
+        <section class="minutes-section">
             <h2>Details</h2>
             <details>
                 <summary>Tournament and Player Preferences</summary>
@@ -52,15 +60,14 @@
             </details>
 
         </section>
-        <section id="diagram">
+        <section class="minutes-section">
             <h2>Diagram</h2>
-            <img src="Diagram.png" alt="diagram">
-            
+            <img id="diagram" src="Diagram.png" alt="diagram">
             <br>
 
             <small><i>Drawn by Gavyn E.</i></small>
         </section>
-        <section id="steps">
+        <section class="minutes-section">
             <h2>Next Steps</h2>
             <ol>
                 <li>Plan out tech stack</li>
