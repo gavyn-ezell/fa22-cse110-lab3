@@ -11,10 +11,10 @@
     <link rel="icon" href="ssbu.ico">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body >
+  <body>
     <div>
         <div id="head-title">
-            <h1 style="color: black; font-size: 6vmin;">SSBU Tournament Notification System -  Brainstorm Meeting</h1>
+            <h1 style="color: black; font-size: 6vmin;">MEETING MINUTES</h1>
         </div>
         <hr>
         <h3>Date: July 10, 2015</h3>
@@ -61,7 +61,7 @@
 
         </section>
         <section class="minutes-section">
-            <h2>Diagram</h2>
+            <h2 id="diagram-heading">Diagram</h2>
             <img id="diagram" src="Diagram.png" alt="diagram">
             <br>
 
@@ -69,10 +69,10 @@
         </section>
         <section class="minutes-section">
             <h2>Next Steps</h2>
-            <ol>
+            <ol id="steps">
                 <li>Plan out tech stack</li>
-                <li>Plan out system</li>
-                <li>Familiarize with Start.gg API</li>
+                <li>Plan out system function</li>
+                <li>Familiarize with API</li>
             </ol>
 
         </section>
@@ -109,11 +109,17 @@
         </form>
     </footer>
     <br>
-    <video controls>
-        <source src="zelda.mp4" type="video/mp4">
-    Your browser does not support the video
-    </video>
-    <audio controls>
-        <source src="mc.mp3" type="audio/mp3">
-    </audio>
+    <div class="aud-vid">
+        <video controls>
+            <source src="zelda.mp4" type="video/mp4">
+        Your browser does not support the video
+        </video>
+    </div>
+    <div class="aud-vid">
+        <audio controls>
+            <source src="mc.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <p id="hidden">Hi, I'm hidden :)</p>
+   </body>
 </html>
