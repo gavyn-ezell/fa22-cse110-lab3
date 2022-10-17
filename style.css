@@ -1,33 +1,75 @@
 /* adding border to image in site */
 html {
     font-size: 18px;
+    font-family: 'Heebo', sans-serif;
 }
 h1 {
     font-size: 5vmin;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+#smile {
+    position: fixed; 
+    margin-left: 1210px;
+    size: 60%;
 }
 h2 {
     text-decoration: underline;
     color: darkblue;
     text-align: center
 }
+
 h3 {
     font-size: 5vh;
     margin-bottom: 15px;
+    position: relative;
+    right: 43px;
+    text-align:center;
+
 }
 a {
     text-decoration: none;
     color: black;
 }
+nav p {
+    text-align: center;
+    position: relative;
+    right: 43px
+}
+
+header h2 {
+    position: relative;
+    right: 43px;
+}
+summary {
+    font-weight: bold;
+}
 a:visited{
     text-decoration: none;
     color: black;
 }
+@media (any-hover: hover) {
+    a:hover {
+        color:#5FB2F2;
+        transform: scale(1.05);
 
-a:hover {
-    color:#5FB2F2;
-    transform: scale(1.05);
+    }
 }
 
+a:active {
+    background-color: darkblue;
+}
+.info {
+    max-width: 300px;
+    min-width: auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 #steps li {
     padding: 10px 8px 10px 8px;
 }
@@ -35,7 +77,9 @@ a:hover {
     border-style: solid;
     border-color: #5FB2F2;
     border-width: 0.08cm;
-    border-radius: 5px
+    border-radius: 5px;
+    height: 103%;
+    width: 103%;
 }
 #hidden {
     display:none;
@@ -47,31 +91,54 @@ a:hover {
     margin-right: 1in;
     text-align:center
 }
+#attendance {
+    text-align: center;
+    position: relative;
+    right: 60px;
+    text-decoration:none
+}
 .lists li {
     font-size: 0.9em;
     padding-left: auto;
     padding-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding-top: 5px;
+    padding-bottom: 5px
 }
 
 ol {
     text-align: center;
     list-style-position: inside;
 }
-video {
+
+ol li {
+    margin:auto;
+}
+#links {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+audio {
     border-style: solid;
     border-width: 7px;
     border-color: hsla(155, 100%, 50%, 1);
-    border-radius: 6px;
-}
-audio {
-    border-style: dotted;
     border-radius: 30px;
 
 }
 
-.aud-vid {
-    margin: 25px 1px 25px 1px;
-    display: block
+#grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(30px, auto);
+
 }
+
+.item {
+    border-radius: 5px;
+    background-color: grey;
+    text-align: center;
+}
+

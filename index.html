@@ -10,6 +10,9 @@
     <title>Meeting Minutes</title>
     <link rel="icon" href="ssbu.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div>
@@ -17,27 +20,29 @@
             <h1 style="color: black; font-size: 6vmin;">MEETING MINUTES</h1>
         </div>
         <hr>
+        <img id="smile" src="dance.gif">
         <h3>Date: July 10, 2015</h3>
-
-        <span><b>Attendance List</b></span>
-        <ul class="lists"> 
-            <li>Gavyn E.</li>
-            <li>Ashish D.</li>
-            <li>Will K.</li>
-            <li>Gino P.</li>
-            <li>John C.</li>
-        </ul>
+        <div id="attendance">
+        <span><b style="position: relative; left: 10px">Attendance List</b></span>
+            <ul class="lists"> 
+                <li>Gavyn E.</li>
+                <li>Ashish D.</li>
+                <li>Will K.</li>
+                <li>Gino P.</li>
+                <li>John C.</li>
+            </ul>
+        </div>
     </div>
     <header>
-        <nav>
-            <h1>Agenda</h1>
-            <p>
-                <a href="#idea">Basic Idea</a>  |
-                <a href="#features">Details</a>  | 
-                <a href="#diagram">Diagram</a>  |
-                <a href="#steps">Next Steps</a>
-            </p>
-        </nav>
+        <h2>Outline</h2>
+            <nav>
+                <p id="navigation">
+                    <a href="#idea">Basic Idea</a>  |
+                    <a href="#features">Details</a>  | 
+                    <a href="#diagram">Diagram</a>  |
+                    <a href="#steps">Next Steps</a>
+                </p>
+            </nav>
     </header>
     <main>
         <section class="minutes-section">
@@ -50,13 +55,17 @@
             <h2>Details</h2>
             <details>
                 <summary>Tournament and Player Preferences</summary>
+                <div class="info"> 
                 User's have option to specifically choose what tournaments
                 will be monitored and what players they will hear updates about.
+                </div>
             </details>
             <details>
                 <summary>Set Counts and Stream Notifications</summary>
+                <div class="info"> 
                 User's will be notified by phone, in real time, as the set count changes for 
                 certain matches within the tournament. 
+                <div class="info"> 
             </details>
 
         </section>
@@ -76,11 +85,17 @@
             </ol>
 
         </section>
-        <em>Links of Interest</em><br>
-        <a href="https://www.start.gg/">Start.gg</a> | 
-        <a href="https://developer.start.gg/docs/intro/">API</a>
+        <p style="text-decoration: underline; text-align: center; position: relative; right: 15px;">Links of Interest</p>
+        <div id="links">
+            <a href="https://www.start.gg/">Start.gg </a>  | 
+            <a href="https://help.start.gg/en/">Help </a>  | 
+            <a href="https://developer.start.gg/docs/intro/">API </a> |
+            <a href="https://www.ssbwiki.com/Tournament_rulesets_(SSBU)">SSBU Rules</a>
+        </div>
+        
         
     </main>
+    <hr>
     <footer>
         <form>
             <fieldset>
@@ -110,16 +125,20 @@
     </footer>
     <br>
     <div class="aud-vid">
-        <video controls>
-            <source src="zelda.mp4" type="video/mp4">
-        Your browser does not support the video
-        </video>
-    </div>
-    <div class="aud-vid">
         <audio controls>
             <source src="mc.mp3" type="audio/mp3">
         </audio>
     </div>
+    GRID TEST 
+    <div id="grid-container">
+        <div class="item a">G</div>
+        <div class="item b">A</div>
+        <div class="item c">V</div>
+        <div class="item a">Y</div>
+        <div class="item b">N</div>
+    </div>
+
+
     <p id="hidden">Hi, I'm hidden :)</p>
    </body>
 </html>
