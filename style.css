@@ -1,4 +1,7 @@
-/* adding border to image in site */
+/* CSS SHEET*/
+* {
+    animation-name: none;
+}
 html {
     font-size: 18px;
     font-family: 'Heebo', sans-serif;
@@ -11,7 +14,8 @@ h1 {
 }
 #smile {
     position: fixed; 
-    margin-left: 1210px;
+    margin-left: 1250px;
+    margin-right: 10px;
     size: 60%;
 }
 h2 {
@@ -28,6 +32,12 @@ h3 {
     text-align:center;
 
 }
+h4 ~ p {
+    color: lightblue;
+}
+p + h4 {
+    color:pink;
+}
 a {
     text-decoration: none;
     color: black;
@@ -36,6 +46,9 @@ nav p {
     text-align: center;
     position: relative;
     right: 43px
+}
+select > option {
+    justify-content: center;
 }
 
 header h2 {
@@ -138,7 +151,19 @@ audio {
 
 .item {
     border-radius: 5px;
-    background-color: grey;
+    background-color: darkgrey;
     text-align: center;
 }
 
+legend, button {
+    color: grey
+}
+
+img[alt="ATTRIBUTE TEST"] {
+    border-color: black;
+    border-style: solid;
+}
+
+p.wow {
+    color:darkseagreen;
+}
